@@ -1,0 +1,208 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/lilasciences/jobs/4465059009",
+      "ai_disclaimer": null,
+      "ai_opt_out_request_url": "http://app9.greenhouse.io/ai_opt_out_request/job_post/4465059009/ai_opt_out",
+      "application_deadline": null,
+      "company_name": "Lila Sciences",
+      "content": "&lt;p&gt;&lt;strong&gt;Your Impact at LILA&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Join our physical sciences team to contribute to developing ML- and agent-driven infrastructure that enables Lila&#39;s scientific superintelligence to autonomously construct, execute, and interpret complex physics simulations and apply these to real-world scientific problems in materials science and chemistry. You will work on projects involving one of these areas: enabling AI agents to reason over and orchestrate simulations, developing ML methods to accelerate atomistic simulations, and leveraging agentic simulations for applications in materials discovery.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Building&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Contribute to projects involving one of these areas: AI agents for simulations, ML models for atomistic simulations, and &lt;em&gt;in silico&lt;/em&gt; materials discovery.&lt;/li&gt;\n&lt;li&gt;Develop methods and workflows for &lt;em&gt;in silico&lt;/em&gt; materials discovery that connect physics-based simulations, generative models, and agentic AI systems.&lt;/li&gt;\n&lt;li&gt;Build intelligent pipelines where AI agents can design, launch, interpret, and refine simulations autonomously.&lt;/li&gt;\n&lt;li&gt;Design new methods to accelerate simulations with ML-based surrogate models.&lt;/li&gt;\n&lt;li&gt;Collaborate with computational scientists, machine learning experts, and platform engineers to integrate &lt;em&gt;in silico&lt;/em&gt; discovery pipelines into Lila&#39;s broader scientific superintelligence ecosystem.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Need to Succeed&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Currently enrolled in an MS or PhD program in CS, Materials Science, Chemistry, Chemical Engineering, Physics, or a related field (exceptional BS candidates with research experience considered)&lt;/li&gt;\n&lt;li&gt;Proficiency in Python, deep learning frameworks and end-to-end workflow deployment&lt;/li&gt;\n&lt;li&gt;Evidence of applied ML research work in physical sciences including method development, model training and evaluation, and sound code practices&lt;/li&gt;\n&lt;li&gt;Strong communication and presentation skills, capable of conveying technical information in a clear and thorough manner&lt;/li&gt;\n&lt;li&gt;Eager to work with highly skilled and dynamic teams in a fast-paced, entrepreneurial, and technical setting&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points For&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Prior experience and publications in one or more of these areas: ML interatomic potential development, LLMs for materials science and chemistry, Generative models for materials, High-throughput computational materials discovery&lt;/li&gt;\n&lt;li&gt;Contributions to open-source simulation or ML infrastructure and software&lt;/li&gt;\n&lt;li&gt;Familiarity with materials science simulation codes and workflow orchestration frameworks&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;About LILA&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is building Scientific Superintelligence™ to solve humankind&#39;s greatest challenges. We believe science is the most inspiring frontier for AI. Rather than hard-coding expert knowledge into tools, LILA builds systems that can learn for themselves.&lt;/p&gt;\n&lt;p&gt;LILA combines advanced AI models with proprietary AI Science Factory™ instruments into an operating system for science that executes the entire scientific method autonomously, accelerating discovery at unprecedented speed, scale, and impact across medicine, materials, and energy. Learn more at www.lila.ai.&lt;/p&gt;\n&lt;p&gt;Guided by our core values of truth, trust, curiosity, grit, and velocity, we move with startup speed while tackling problems of historic importance. If this sounds like an environment you&#39;d love to work in, even if you don&#39;t meet every qualification listed above, we encourage you to apply.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;We’re All In&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is&amp;nbsp;committed to equal employment opportunity&amp;nbsp;regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status.&lt;/p&gt;\n&lt;p&gt;Information you provide during your application process will be handled in accordance with our &lt;a href=&quot;https://www.lila.ai/candidate-privacy-policy-notice&quot;&gt;Candidate Privacy Policy&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;A Note to Agencies&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Lila Sciences does not accept unsolicited resumes from any source other than candidates. The submission of unsolicited resumes by recruitment or staffing agencies to Lila Sciences or its employees is strictly prohibited unless contacted directly by Lila Science’s internal Talent Acquisition team. Any resume submitted by an agency in the absence of a signed agreement will automatically become the property of Lila Sciences, and Lila Sciences will not owe any referral or other fees with respect thereto.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "data_compliance": [
+        {
+          "demographic_data_consent_applies": false,
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "type": "gdpr"
+        }
+      ],
+      "departments": [
+        {
+          "child_ids": [],
+          "id": 4013388009,
+          "name": "Physical Sciences AI",
+          "parent_id": null
+        }
+      ],
+      "first_published": "2026-10-26T16:51:37-04:00",
+      "id": 4465059009,
+      "include_ai_disclaimer": false,
+      "internal_job_id": 4283938009,
+      "language": "en",
+      "location": {
+        "name": "Cambridge, MA USA; San Francisco, CA USA"
+      },
+      "metadata": [
+        {
+          "id": 4422439009,
+          "name": "Team",
+          "value": "PS AI",
+          "value_type": "single_select"
+        },
+        {
+          "id": 4340245009,
+          "name": "Confidential?",
+          "value": false,
+          "value_type": "yes_no"
+        }
+      ],
+      "offices": [
+        {
+          "child_ids": [],
+          "id": 4019809009,
+          "location": null,
+          "name": "Alewife, Cambridge, MA",
+          "parent_id": null
+        },
+        {
+          "child_ids": [],
+          "id": 4011688009,
+          "location": null,
+          "name": "San Francisco, CA",
+          "parent_id": null
+        }
+      ],
+      "requisition_id": "8789",
+      "title": "Co-Op, Agentic Simulations for Materials Science",
+      "updated_at": "2026-11-04T09:50:44-05:00"
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/lilasciences/jobs/4465064009",
+      "ai_disclaimer": null,
+      "ai_opt_out_request_url": "http://app9.greenhouse.io/ai_opt_out_request/job_post/4465064009/ai_opt_out",
+      "application_deadline": null,
+      "company_name": "Lila Sciences",
+      "content": "&lt;p&gt;&lt;strong&gt;Your Impact at LILA&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Develop and evaluate machine learning methods supporting small molecule design and synthesis. Working with public and internal chemistry datasets, the co-op will pursue a focused research project in either reaction prediction and benchmarking or molecular property prediction for medicinal chemistry optimization.&lt;/p&gt;\n&lt;p&gt;Potential projects include building benchmarks to assess reaction prediction models and reaction plausibility, or developing and fine-tuning molecular property predictors using project-specific data. The primary project will be selected based on the candidate’s interests, experience, and team priorities. Expected outputs include reproducible data and evaluation workflows, benchmark results, and research recommendations to inform future model development and integration.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Building&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Plan and execute a Co-Op project in conjunction with the Molecular Intelligence team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Need to Succeed&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Pursuing a graduate degree (MSc, PhD) in Chemistry, Computer Science, Physics, or similar&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points For&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Python (data processing, model training, and evaluation)&lt;/li&gt;\n&lt;li&gt;Familiarity with cheminformatics libraries (RDKit or similar)&lt;/li&gt;\n&lt;li&gt;Basic machine learning (supervised learning, model evaluation metrics)&lt;/li&gt;\n&lt;li&gt;Familiarity with chemistry concepts through coursework or research experience&lt;/li&gt;\n&lt;li&gt;Bonus: experience with molecular property prediction, multi-task learning, self-supervised pre-training, or model fine-tuning&lt;/li&gt;\n&lt;li&gt;Bonus: familiarity with reaction data formats, reaction SMARTS, or reaction databases (e.g., Pistachio, Reaxys, SciFinder)&lt;/li&gt;\n&lt;li&gt;Bonus: background or interest in organic or medicinal chemistry&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;About LILA&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is building Scientific Superintelligence™ to solve humankind&#39;s greatest challenges. We believe science is the most inspiring frontier for AI. Rather than hard-coding expert knowledge into tools, LILA builds systems that can learn for themselves.&lt;/p&gt;\n&lt;p&gt;LILA combines advanced AI models with proprietary AI Science Factory™ instruments into an operating system for science that executes the entire scientific method autonomously, accelerating discovery at unprecedented speed, scale, and impact across medicine, materials, and energy. Learn more at www.lila.ai.&lt;/p&gt;\n&lt;p&gt;Guided by our core values of truth, trust, curiosity, grit, and velocity, we move with startup speed while tackling problems of historic importance. If this sounds like an environment you&#39;d love to work in, even if you don&#39;t meet every qualification listed above, we encourage you to apply.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;We’re All In&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is&amp;nbsp;committed to equal employment opportunity&amp;nbsp;regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status.&lt;/p&gt;\n&lt;p&gt;Information you provide during your application process will be handled in accordance with our &lt;a href=&quot;https://www.lila.ai/candidate-privacy-policy-notice&quot;&gt;Candidate Privacy Policy&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;A Note to Agencies&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Lila Sciences does not accept unsolicited resumes from any source other than candidates. The submission of unsolicited resumes by recruitment or staffing agencies to Lila Sciences or its employees is strictly prohibited unless contacted directly by Lila Science’s internal Talent Acquisition team. Any resume submitted by an agency in the absence of a signed agreement will automatically become the property of Lila Sciences, and Lila Sciences will not owe any referral or other fees with respect thereto.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "data_compliance": [
+        {
+          "demographic_data_consent_applies": false,
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "type": "gdpr"
+        }
+      ],
+      "departments": [
+        {
+          "child_ids": [],
+          "id": 4013388009,
+          "name": "Physical Sciences AI",
+          "parent_id": null
+        }
+      ],
+      "first_published": "2026-10-26T16:51:50-04:00",
+      "id": 4465064009,
+      "include_ai_disclaimer": false,
+      "internal_job_id": 4283940009,
+      "language": "en",
+      "location": {
+        "name": "Cambridge, MA USA; San Francisco, CA USA"
+      },
+      "metadata": [
+        {
+          "id": 4422439009,
+          "name": "Team",
+          "value": "PS AI",
+          "value_type": "single_select"
+        },
+        {
+          "id": 4340245009,
+          "name": "Confidential?",
+          "value": false,
+          "value_type": "yes_no"
+        }
+      ],
+      "offices": [
+        {
+          "child_ids": [],
+          "id": 4019809009,
+          "location": null,
+          "name": "Alewife, Cambridge, MA",
+          "parent_id": null
+        },
+        {
+          "child_ids": [],
+          "id": 4011687009,
+          "location": null,
+          "name": "One Charles Park, Cambridge, MA",
+          "parent_id": null
+        },
+        {
+          "child_ids": [],
+          "id": 4011688009,
+          "location": null,
+          "name": "San Francisco, CA",
+          "parent_id": null
+        }
+      ],
+      "requisition_id": "8791",
+      "title": "Co-Op, Reaction Prediction & Benchmarking",
+      "updated_at": "2026-11-04T09:50:44-05:00"
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/lilasciences/jobs/4031282009",
+      "ai_disclaimer": null,
+      "ai_opt_out_request_url": "http://app9.greenhouse.io/ai_opt_out_request/job_post/4031282009/ai_opt_out",
+      "application_deadline": null,
+      "company_name": "Lila Sciences",
+      "content": "&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Your Impact at LILA&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;We&#39;re seeking extraordinarily talented Forward Deployed Engineers to join our growing team. Our FDEs are high-performing generalists with a broad set of skills across scientific domains and software engineering, in addition to depth in one or more focus areas. &lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;As an FDE, you&#39;ll embed directly within our internal and external customer facing biotech and science teams, living their problems and rapidly ideating, building, and deploying &amp;nbsp;solutions that transform their capabilities across the Lila platform. You&#39;ll leverage our AI and software platform tools while developing custom features that address each customer&#39;s unique challenges. This isn&#39;t traditional software development—it&#39;s high-velocity, AI-fueled, high-impact engineering where you&#39;ll ship production code in days, not months.&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;What You&#39;ll Be Building&lt;/span&gt; &lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Developing, wrapping, and adapting domain-specific tools for molecular modeling, data analysis, process optimization, and more.&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;Deploying custom agentic scientific workflows that integrate with industrial instruments (PLCs, control software) and data systems (ERP, MES, SCADA).&lt;/li&gt;\n&lt;li&gt;Building real-time data pipelines that transform scientific data into actionable insights.&lt;/li&gt;\n&lt;li&gt;Creating intuitive interfaces that make complex AI/ML capabilities accessible to scientists.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;What You&#39;ll Need to Succeed&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Background in biology, molecular science, or related scientific field.&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;Ability to communicate effectively with external partners and internal product and technical leaders.&lt;/li&gt;\n&lt;li&gt;Experience with data engineering, ETL pipelines, and working with complex datasets.&lt;/li&gt;\n&lt;li&gt;Strong full-stack development skills with the ability to work across backend, frontend, and data layers.&lt;/li&gt;\n&lt;li&gt;Exceptional problem-solving abilities and comfort with ambiguous requirements.&lt;/li&gt;\n&lt;li&gt;Knack for product discovery and an ability to pass well-defined customer requirements back to the product teams.&lt;/li&gt;\n&lt;li&gt;Willingness to travel to customer sites for engineering &amp;nbsp;deployments.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Bonus Points For&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Previous customer-facing or consulting experience. &lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;Depth in controls engineering and machine learning.&lt;/li&gt;\n&lt;li&gt;Experience with scientific computing libraries (NumPy, Pandas, SciPy, RDKit).&lt;/li&gt;\n&lt;li&gt;Familiarity with ML/AI implementation and deployment.&lt;/li&gt;\n&lt;li&gt;Familiarity with modern web technologies (TypeScript, React)&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;What Makes a Great FDE&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Customer Obsessed: You&#39;re energized by understanding customer problems deeply and seeing your solutions drive real impact.&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;Fast Learner: You quickly grasp new scientific domains and translate complex requirements into elegant solutions.&lt;/li&gt;\n&lt;li&gt;Autonomous: You thrive with minimal supervision and take extreme ownership of customer success.&lt;/li&gt;\n&lt;li&gt;Collaborative: You work seamlessly with both technical and non-technical stakeholders.&lt;/li&gt;\n&lt;li&gt;Technically Versatile: You&#39;re comfortable jumping between technologies and picking up new tools as needed.&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;strong&gt;Compensation&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We offer competitive base compensation with bonus potential and generous early-stage equity. Your final offer will reflect your background, expertise, and expected impact.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;U.S. Benefits.&lt;/strong&gt; Full-time U.S. employees receive a comprehensive benefits program including medical, dental, and vision coverage; employer-paid life and disability insurance; flexible time off with generous company wide holidays; paid parental leave; an educational assistance program; commuter benefits, including bike share memberships for office based employees; and a company subsidized lunch program.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;International Benefits.&lt;/strong&gt; Full-time employees outside the U.S. receive a comprehensive benefits program tailored to their region. USD salary ranges apply only to U.S.-based positions; international salaries are set to local market.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Expected Base Salary Range&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$192,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$256,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;About LILA&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is building Scientific Superintelligence™ to solve humankind&#39;s greatest challenges. We believe science is the most inspiring frontier for AI. Rather than hard-coding expert knowledge into tools, LILA builds systems that can learn for themselves.&lt;/p&gt;\n&lt;p&gt;LILA combines advanced AI models with proprietary AI Science Factory™ instruments into an operating system for science that executes the entire scientific method autonomously, accelerating discovery at unprecedented speed, scale, and impact across medicine, materials, and energy. Learn more at www.lila.ai.&lt;/p&gt;\n&lt;p&gt;Guided by our core values of truth, trust, curiosity, grit, and velocity, we move with startup speed while tackling problems of historic importance. If this sounds like an environment you&#39;d love to work in, even if you don&#39;t meet every qualification listed above, we encourage you to apply.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;We’re All In&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Lila Sciences is&amp;nbsp;committed to equal employment opportunity&amp;nbsp;regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status.&lt;/p&gt;\n&lt;p&gt;Information you provide during your application process will be handled in accordance with our &lt;a href=&quot;https://www.lila.ai/candidate-privacy-policy-notice&quot;&gt;Candidate Privacy Policy&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;A Note to Agencies&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Lila Sciences does not accept unsolicited resumes from any source other than candidates. The submission of unsolicited resumes by recruitment or staffing agencies to Lila Sciences or its employees is strictly prohibited unless contacted directly by Lila Science’s internal Talent Acquisition team. Any resume submitted by an agency in the absence of a signed agreement will automatically become the property of Lila Sciences, and Lila Sciences will not owe any referral or other fees with respect thereto.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "data_compliance": [
+        {
+          "demographic_data_consent_applies": false,
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "type": "gdpr"
+        }
+      ],
+      "departments": [
+        {
+          "child_ids": [],
+          "id": 4022721009,
+          "name": "Software",
+          "parent_id": null
+        }
+      ],
+      "first_published": "2025-10-06T13:34:23-04:00",
+      "id": 4031282009,
+      "include_ai_disclaimer": false,
+      "internal_job_id": 4022135009,
+      "language": "en",
+      "location": {
+        "name": "Cambridge, MA USA; San Francisco, CA USA"
+      },
+      "metadata": [
+        {
+          "id": 4422439009,
+          "name": "Team",
+          "value": "Forward Deployed Engineering",
+          "value_type": "single_select"
+        },
+        {
+          "id": 4340245009,
+          "name": "Confidential?",
+          "value": false,
+          "value_type": "yes_no"
+        }
+      ],
+      "offices": [
+        {
+          "child_ids": [],
+          "id": 4011687009,
+          "location": null,
+          "name": "One Charles Park, Cambridge, MA",
+          "parent_id": null
+        }
+      ],
+      "requisition_id": "6847",
+      "title": "Staff Forward Deployed Engineer, Life Sciences",
+      "updated_at": "2026-11-04T09:50:44-05:00"
+    }
+  ],
+  "meta": {
+    "total": 3
+  }
+}

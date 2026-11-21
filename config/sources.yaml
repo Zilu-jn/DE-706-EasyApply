@@ -1,0 +1,60 @@
+# Which sources and employers we collect from.
+# Employers were chosen because they use Greenhouse or Lever AND appear in the
+# SimplifyJobs internship list, so we can measure cross-source duplicates.
+# Checked live on 2026-11-19.
+
+http:
+  user_agent: "easyapply-student-project (IDS706 course project)"
+  timeout_seconds: 30
+  max_retries: 3
+  backoff_seconds: 2
+
+greenhouse:
+  base_url: "https://boards-api.greenhouse.io/v1/boards"
+  boards:
+    - token: lilasciences
+      company: Lila Sciences
+    - token: cloudflare
+      company: Cloudflare
+    - token: imc
+      company: IMC Trading
+    - token: addepar1
+      company: Addepar
+    - token: figma
+      company: Figma
+    - token: doordashusa
+      company: DoorDash
+
+lever:
+  base_url: "https://api.lever.co/v0/postings"
+  page_size: 100
+  companies:
+    - token: tri
+      company: Toyota Research Institute
+    - token: zoox
+      company: Zoox
+    - token: palantir
+      company: Palantir
+    - token: field-ai
+      company: Field AI
+
+github_list:
+  repo: SimplifyJobs/Summer2027-Internships
+  branch: dev
+  path: .github/scripts/listings.json
+  categories:
+    - "AI/ML/Data"
+    - "Data Science, AI & Machine Learning"
+  active_only: true
+
+# Used to flag data-related roles. Records that don't match are kept but flagged,
+# so nothing is silently dropped.
+target_role_keywords:
+  - data
+  - analyst
+  - analytics
+  - machine learning
+  - "\\bml\\b"
+  - "\\bai\\b"
+  - scientist
+  - intern

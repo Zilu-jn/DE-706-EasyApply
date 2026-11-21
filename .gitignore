@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Secrets
+.env
+
+# Collected data (raw snapshots and processed outputs stay local)
+data/*
+!data/.gitkeep
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,32 @@
+[project]
+name = "easyapply"
+version = "0.1.0"
+description = "Job-posting pipeline: collect, clean, and deduplicate data-role postings from multiple sources."
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "polars>=1.0",
+    "pyyaml>=6.0",
+    "beautifulsoup4>=4.12",
+    "rapidfuzz>=3.14.6",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["E501"]  # long literal URLs/HTML in test data are fine
