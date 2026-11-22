@@ -1,0 +1,125 @@
+[
+  {
+    "active": true,
+    "category": "AI/ML/Data",
+    "company_name": "APEX Analytix",
+    "company_url": "https://simplify.jobs/c/APEX-Analytix",
+    "date_posted": 1789510953,
+    "date_updated": 1789512877,
+    "degrees": [
+      "Bachelor's",
+      "Master's"
+    ],
+    "id": "00026218-6b9b-420f-a490-b3b29742cf17",
+    "is_visible": true,
+    "locations": [
+      "Greensboro, NC"
+    ],
+    "source": "Simplify",
+    "sponsorship": "Other",
+    "terms": [
+      "Summer 2027"
+    ],
+    "title": "Data Analyst Intern - Summer 2027",
+    "url": "https://ats.rippling.com/apexanalytix-careers/jobs/e275fd70-45a3-4a64-8688-cace8a3f87ef"
+  },
+  {
+    "active": true,
+    "category": "AI/ML/Data",
+    "company_name": "Expedia Group",
+    "company_url": "https://simplify.jobs/c/Expedia-Group",
+    "date_posted": 1779516338,
+    "date_updated": 1792743131,
+    "degrees": [
+      "PhD"
+    ],
+    "id": "0065f072-c487-4769-b10d-6993af68f633",
+    "is_visible": true,
+    "locations": [
+      "Austin, TX",
+      "San Jose, CA"
+    ],
+    "source": "Simplify",
+    "sponsorship": "Other",
+    "terms": [
+      "Summer 2026"
+    ],
+    "title": "Machine Learning Science Intern",
+    "url": "https://expedia.wd108.myworkdayjobs.com/private/job/Austin-Domain-11---HomeAway/Machine-Learning-Science-Intern---PhD---2026---Austin--San-Jose_R-98585"
+  },
+  {
+    "active": true,
+    "category": "AI/ML/Data",
+    "company_name": "Lila Sciences",
+    "company_url": "https://simplify.jobs/c/Lila-Sciences",
+    "date_posted": 1793047910,
+    "date_updated": 1793052650,
+    "degrees": [
+      "Master's",
+      "PhD"
+    ],
+    "id": "aff4fc5b-ba2c-4d64-ad10-c2a54e504b51",
+    "is_visible": true,
+    "locations": [
+      "Cambridge, MA",
+      "SF"
+    ],
+    "source": "Simplify",
+    "sponsorship": "Other",
+    "terms": [
+      "N/A"
+    ],
+    "title": "Reaction Prediction & Benchmarking Co-op",
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4465064009"
+  },
+  {
+    "active": true,
+    "category": "AI/ML/Data",
+    "company_name": "Lila Sciences",
+    "company_url": "https://simplify.jobs/c/Lila-Sciences",
+    "date_posted": 1793047897,
+    "date_updated": 1793052640,
+    "degrees": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "id": "ad26bc9a-163b-4cd2-9ac6-a5417323f472",
+    "is_visible": true,
+    "locations": [
+      "Cambridge, MA",
+      "SF"
+    ],
+    "source": "Simplify",
+    "sponsorship": "Other",
+    "terms": [
+      "N/A"
+    ],
+    "title": "Agentic Simulations for Materials Science Co-op",
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4465059009"
+  },
+  {
+    "active": true,
+    "category": "AI/ML/Data",
+    "company_name": "Toyota Research Institute",
+    "company_url": "https://simplify.jobs/c/Toyota-Research-Institute",
+    "date_posted": 1794441162,
+    "date_updated": 1794441243,
+    "degrees": [
+      "Master's",
+      "PhD"
+    ],
+    "id": "00e50906-bfe2-482d-b3ef-ed2e9d51a666",
+    "is_visible": true,
+    "locations": [
+      "Los Altos, CA"
+    ],
+    "source": "Simplify",
+    "sponsorship": "Other",
+    "terms": [
+      "N/A"
+    ],
+    "title": "Automated Driving Advanced Development Intern - Machine Learning Research",
+    "url": "https://jobs.lever.co/tri/da4b4832-36e7-4703-9841-c319efd6d495/apply"
+  }
+]
