@@ -48,6 +48,9 @@ are kept, plus:
 | `is_target_role` | bool | Title matches our data-role keywords |
 | `opportunity_key` | str | Cross-source identity key (see below) |
 | `match_method` | str | `ats_id`, `url`, or `none` |
+| `opportunity_id` | str | First 16 hex characters of SHA-1 of `opportunity_key`; emitted by the transformer |
+| `group_size` | integer | Posting records sharing an opportunity in this transformed batch |
+| `n_sources` | integer | Distinct sources sharing an opportunity in this transformed batch |
 
 ### Identity rules
 
@@ -59,3 +62,30 @@ are kept, plus:
    ID or URL go to `review_candidates.parquet`. They are **not** merged automatically.
 
 `opportunity_key` is the `ats_job_key`, else the normalized URL, else `{source}:{external_id}`.
+
+## Stage 3: PostgreSQL (`sql/`)
+
+The database loader consumes the selected run's Stage 1 `manifest.json` and Stage 2
+`postings.parquet` and `review_candidates.parquet`. The upstream column names and
+identity assignments remain unchanged. Every posting must have a matching manifest
+collection, collection timestamp, and snapshot path.
+
+`source_feeds` identifies Greenhouse/Lever feeds by `(source, company_token)` and
+the GitHub feed by its configured repository. GitHub records retain that repository
+and the collected commit in `extra`. Review pairs use the emitted `left_source`,
+`left_external_id`, `right_source`, `right_external_id`, `title_score`, and
+`location_overlap` fields. Database review outcomes are preserved across reloads.
+
+The database separates source postings from shared opportunities, and distinct
+content versions from run observations. Its `state_hash` supplements `content_hash`
+with meaningful searchable/source metadata. Repository commit changes remain
+observation lineage and do not create new posting versions. Batch `group_size` and
+`n_sources` are derived again for current SQL views because different feeds can
+have different last-successful collection times.
+
+Only complete collections in successfully loaded runs publish current results.
+Partial records and failures remain auditable without replacing last-successful
+results. An absent community listing is not treated as proof of employer closure.
+The schema, ERD, view definitions, and integration behavior are documented in
+[`database.md`](database.md) and [`sql/README.md`](../sql/README.md).
+
