@@ -1,0 +1,54 @@
+name: PostgreSQL storage
+
+on:
+  push:
+    paths:
+      - 'sql/**'
+      - 'tests/**'
+      - 'ingestion/**'
+      - 'transform/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/postgres.yml'
+  pull_request:
+    paths:
+      - 'sql/**'
+      - 'tests/**'
+      - 'ingestion/**'
+      - 'transform/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/postgres.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  storage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: easyapply
+          POSTGRES_PASSWORD: test-only-password
+          POSTGRES_DB: easyapply_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U easyapply -d easyapply_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://easyapply:test-only-password@localhost:5432/easyapply_test
+      REQUIRE_POSTGRES_TESTS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --frozen
+      - run: uv run ruff check sql tests/integration tests/unit/test_storage_validation.py
+      - run: uv run ruff format --check sql tests/integration tests/unit/test_storage_validation.py
+      - run: uv run pytest -q

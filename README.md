@@ -40,6 +40,29 @@ uv run pytest                      # tests use saved fixtures, no network
 
 `ingestion.run` also accepts `--only greenhouse|lever|github`.
 
+### PostgreSQL storage and queries
+
+The PostgreSQL component is implemented under [`sql/`](sql/README.md). Follow its
+setup instructions to start PostgreSQL, export the connection variables, and initialize:
+
+```bash
+uv run python -m sql.run init
+uv run python -m sql.run load --run-id YOUR_RUN_ID
+uv run python -m sql.run summary
+```
+
+Use the same run ID that ingestion and transformation produced. The database
+preserves posting history, source completeness, requirement evidence, matching
+reviews, and student decisions. Reusable views support current opportunities,
+new discoveries, changes, follow-up, and feed health. The
+[database design](docs/database.md) includes the ERD and data dictionary;
+[example SQL queries](sql/example_queries.sql) demonstrate downstream use.
+
+The storage guide also includes a saved-source demo and PostgreSQL integration
+test commands. Ordinary `pytest` skips database integration tests unless
+`TEST_DATABASE_URL` selects a dedicated test database. The focused
+[PostgreSQL workflow](.github/workflows/postgres.yml) requires them to run.
+
 Outputs, all under `data/` (git-ignored):
 
 ```
@@ -76,7 +99,7 @@ confirmed cross-source matches, 15 pairs sent to review.
 ```
 ingestion/   source adapters (Greenhouse, Lever, GitHub list) + run script
 transform/   Polars cleaning, normalization, deduplication
-sql/         PostgreSQL schema and views
+sql/         PostgreSQL schema, views, batch loader, decisions, and saved-source demo
 dags/        Airflow DAGs
 app/         Streamlit dashboard
 nlp/         sponsorship-statement classifier (IDS 703 extension)
@@ -96,7 +119,7 @@ tests/       unit + fixture-based end-to-end tests
 
 ## Data engineering principles
 
-*To be completed by the team. Examples already in the code:*
+Implemented examples, with database details in [`docs/database.md`](docs/database.md):
 
 - **Modularity / reusability:** every adapter returns the same `RawRecord`
   shape (`ingestion/base.py`); adding a source means adding one file.
@@ -104,9 +127,17 @@ tests/       unit + fixture-based end-to-end tests
   completeness (Greenhouse `meta.total`, Lever pagination) and flagged in the
   run manifest instead of failing silently.
 - **Idempotency:** replaying the same batch produces identical output
-  (`tests/test_pipeline_fixtures.py`).
+  (`tests/test_pipeline_fixtures.py`). Database fingerprints and unique keys prevent
+  duplicate rows on replay, and changed registered inputs are rejected.
 - **Governance / lineage:** raw responses are stored unchanged with a SHA-256
-  checksum, and every record carries its `run_id` and `snapshot_path`.
+  checksum, and every record carries its `run_id` and `snapshot_path`. Database
+  observations connect source snapshots, collection outcomes, versions, and opportunities.
 - **Efficiency:** `content_hash` lets later steps skip descriptions that
-  haven't changed.
+  haven't changed. Storage reuses unchanged versions and skips repeated evidence extraction.
 - **Security:** credentials live in `.env`, which is git-ignored.
+  Database connections read exported environment variables, and SQL binds input parameters.
+- **Observability:** collection and load records expose errors, completeness,
+  counts, and last successful publication through `v_source_health`.
+- **Storage reliability:** failed or incomplete feeds preserve their last
+  successfully published results; database transactions prevent partial publication.
+
