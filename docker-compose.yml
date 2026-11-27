@@ -1,0 +1,47 @@
+# Reproducible development environment.
+#
+#   docker compose build
+#   docker compose run --rm app uv run pytest -q         # tests (no network)
+#   docker compose run --rm app uv run python -m ingestion.run
+#   docker compose run --rm app uv run python -m transform.run
+#   docker compose up -d postgres                        # database only
+#
+# Values come from .env when present (see .env.example); sensible defaults
+# otherwise, so a fresh clone works with no setup.
+
+services:
+  app:
+    build: .
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ${POSTGRES_USER:-easyapply}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+      POSTGRES_DB: ${POSTGRES_DB:-easyapply}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      DATA_DIR: /app/data
+    volumes:
+      - .:/app
+      - /app/.venv # keep the container's own virtualenv, not the host's
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-easyapply}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+      POSTGRES_DB: ${POSTGRES_DB:-easyapply}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

@@ -1,0 +1,45 @@
+name: CI
+
+# Lint, offline test suite, duplicate-detection accuracy evaluation, and a
+# Docker build check. Postgres-backed storage tests have their own workflow
+# (.github/workflows/postgres.yml).
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - name: Install locked dependencies
+        run: uv sync --frozen
+      - name: Lint
+        run: uv run ruff check .
+      - name: Tests (unit + fixture-based end-to-end, no network)
+        run: uv run pytest -q
+      - name: Duplicate-detection accuracy report
+        run: uv run python -m evaluation.dedup_accuracy
+
+  docker:
+    # The dev environment must stay reproducible: image builds and the full
+    # test suite passes inside the container.
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker compose build app
+      - name: Run tests in container
+        run: docker compose run --rm --no-deps app uv run pytest -q
