@@ -30,6 +30,23 @@ uv sync                 # creates .venv and installs dependencies
 cp .env.example .env    # fill in values; never commit .env
 ```
 
+### Docker (reproducible environment)
+
+The same environment, pinned by `uv.lock`, also runs in Docker — no local
+Python or uv needed. `.env` is optional; defaults work out of the box.
+
+```bash
+docker compose build
+docker compose run --rm app uv run pytest -q              # test suite
+docker compose run --rm app uv run python -m ingestion.run
+docker compose run --rm app uv run python -m transform.run
+docker compose up -d postgres                             # database only
+```
+
+The repo is bind-mounted into the container, so code edits apply without a
+rebuild; rebuild only when dependencies change. Set `POSTGRES_PORT` in `.env`
+if 5432 is taken on your machine.
+
 ## Running the pipeline (so far)
 
 ```bash
@@ -71,6 +88,35 @@ the database, Airflow, and dashboard work builds on.
 First live run (2026-11-19): 4,055 records → 3,990 unique opportunities, 65
 confirmed cross-source matches, 15 pairs sent to review.
 
+## Testing, CI, and dedup accuracy
+
+Three layers, all offline (saved API responses, no network):
+
+1. **Unit tests** (`tests/unit/`): adapters (including feed failures,
+   incomplete collections, and retry behavior), normalization, content
+   hashing, and duplicate detection.
+2. **End-to-end tests** (`tests/test_pipeline_fixtures.py`): the full
+   ingest → clean → dedup pipeline on saved source responses, including
+   idempotent replay.
+3. **Accuracy evaluation** (`evaluation/`): a manually labeled sample of
+   posting pairs (`evaluation/labeled_pairs.csv`) is scored against the
+   pipeline's matches, reporting precision/recall, *missed duplicates*
+   (and whether the review queue caught them) and *incorrect matches*:
+
+   ```bash
+   uv run python -m evaluation.dedup_accuracy          # human-readable report
+   uv run python -m evaluation.dedup_accuracy --json
+   ```
+
+   It exits non-zero on any incorrect match or on a missed duplicate the
+   review queue did not catch, so regressions fail CI.
+
+GitHub Actions runs on every push and pull request
+([`.github/workflows/ci.yml`](.github/workflows/ci.yml)): ruff lint, the full
+pytest suite, the accuracy evaluation, and a Docker build check that re-runs
+the tests inside the container. Postgres-backed storage tests have a separate
+workflow.
+
 ## Project structure
 
 ```
@@ -83,6 +129,7 @@ nlp/         sponsorship-statement classifier (IDS 703 extension)
 config/      source and employer configuration
 docs/        data contract, ERD, architecture diagram
 tests/       unit + fixture-based end-to-end tests
+evaluation/  labeled posting pairs + dedup accuracy evaluation
 ```
 
 ## Team roles
@@ -110,3 +157,6 @@ tests/       unit + fixture-based end-to-end tests
 - **Efficiency:** `content_hash` lets later steps skip descriptions that
   haven't changed.
 - **Security:** credentials live in `.env`, which is git-ignored.
+- **Reproducibility / observability:** the Docker image installs exactly
+  `uv.lock`; CI runs lint, tests, the dedup accuracy report, and an
+  in-container test run on every push.

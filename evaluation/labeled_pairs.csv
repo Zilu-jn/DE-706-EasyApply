@@ -1,0 +1,9 @@
+left_source,left_external_id,right_source,right_external_id,label,notes
+greenhouse,4465064009,github,aff4fc5b-ba2c-4d64-ad10-c2a54e504b51,duplicate,Lila Sciences Reaction Prediction & Benchmarking co-op; the GitHub listing links directly to Greenhouse job 4465064009
+greenhouse,4465059009,github,ad26bc9a-163b-4cd2-9ac6-a5417323f472,duplicate,Lila Sciences Agentic Simulations co-op; the GitHub listing links directly to Greenhouse job 4465059009
+lever,9c48b236-e6ad-4b97-9380-c675e5432415,github,00e50906-bfe2-482d-b3ef-ed2e9d51a666,duplicate,TRI Automated Driving ML Research intern; the GitHub listing links a retired Lever ID (da4b4832) for the same role so no shared identifier exists
+lever,9c48b236-e6ad-4b97-9380-c675e5432415,lever,44812007-50a8-49e6-87ed-3fac9fa6b418,distinct,Two different TRI internships (Automated Driving vs Accelerated Science)
+greenhouse,4465059009,github,aff4fc5b-ba2c-4d64-ad10-c2a54e504b51,distinct,Both Lila Sciences co-ops but different projects (Agentic Simulations vs Reaction Prediction)
+greenhouse,4031282009,greenhouse,4465059009,distinct,Same company; staff engineering role vs a co-op
+github,00026218-6b9b-420f-a490-b3b29742cf17,github,0065f072-c487-4769-b10d-6993af68f633,distinct,Different companies entirely (APEX Analytix vs Expedia Group)
+lever,44812007-50a8-49e6-87ed-3fac9fa6b418,github,00e50906-bfe2-482d-b3ef-ed2e9d51a666,distinct,TRI Accelerated Science intern vs Automated Driving intern
